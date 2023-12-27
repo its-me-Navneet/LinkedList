@@ -4,8 +4,14 @@ public class LinkedListExample {
     public static void main(String[] args) {
         LinkedList<Integer> integerLinkedList = new LinkedList<>();
 
-        System.out.println("Is list Empty: " +integerLinkedList.isEmpty());
-
+        System.out.println("Is list Empty: " +integerLinkedList.isEmpty()); 
+ 
+         // creating manually linked list of 3 size
+        Node<Integer> head = new Node <>(56) ; 
+        head.next = new Node<Integer>(30) ;
+        head.next.next = new Node<Integer>(70) ; 
+       
+           // using function 
         integerLinkedList.add(56);
         integerLinkedList.add(30);
         integerLinkedList.add(70);
